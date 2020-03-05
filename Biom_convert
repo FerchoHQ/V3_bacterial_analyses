@@ -1,0 +1,20 @@
+Archivos biom
+
+
+Agregar nombres de bacterias a los otus
+
+biom convert -i table.biom -o otu_table.tsv --to-tsv --header-key taxonomy.
+
+#########################################
+__________________________________________
+
+Convertir archivos BIOM a JSON:
+
+biom convert -i otu_table_mc2_w_tax_open_sorted.biom -o otu_table_mc2_w_tax_open_sorted_json.biom --to-json 
+--table-type "OTU table"
+
+Convertir archivos BIOM a TSV:
+
+biom convert -i otus_open_ucrss_usearch97/otu_table_mc2_w_tax_open_sorted.biom -o 
+otus_open_ucrss_usearch97/otu_table_mc2_w_tax_open_sorted_tsv.biom --to-tsv --table-type "OTU table"
+
